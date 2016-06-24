@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/weui.min.css" />
+		<link rel="stylesheet" href="../../css/jquery-weui.css" />
+		<script type="text/javascript" src="../../js/libs/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../js/base/siteConfigUrl.js" ></script>
+		<script type="text/javascript" src="../../js/libs/template.js"></script>
+		<script type="text/javascript" src="../../js/base/rem.js"></script>
+		<script type="text/javascript" src="../../js/widget/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../js/widget/render.js"></script>
+		<script type="text/javascript" src="../../js/common/store/batch.js"></script>
+		<title>批量设置利润</title>
+	</head>
+	<body>
+		<div class="batch-head">
+			<div class="selectContent">
+				<div class="content">
+					<select class="selectBox">
+						<option>全部类目</option>
+					</select>
+				</div>
+				<div class="content">
+					<select class="selectBox">
+						<option>全部品牌</option>
+					</select>
+				</div>
+				<div class="content">
+					<select class="selectBox">
+						<option>全部分类</option>
+					</select>
+				</div>
+			</div>
+			<div class="selectSitting">
+				<div class="radio">
+					<input type="radio" name="lirun" value="1" id="batch"/><label for="batch">&nbsp;利润（单件）</label>
+					<span>
+						<input type="number" value=""/>
+						<span class="tip">元</span>
+					</span>
+				</div>
+				<div class="radio">
+					<input type="radio" name="lirun" value="2" id="batchRange"/><label for="batchRange">&nbsp;利润幅度</label>
+					<span>
+						<input type="number" value=""/>
+						<span class="tip">%</span>
+					</span>
+				</div>
+			
+				<p class="des">二选一，生效后售价随成本价变化成浮动</p>
+				<div class="selectSitting-btn">
+					<div>
+						<a>重置为系统价格</a>
+					</div>
+					<div>
+						<a class="test">保存</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="batch-history-title">
+			<span>利润设置记录</span>
+		</div>
+		<div class="batch-history-content">
+		</div>
+		<div class="weui-infinite-scroll" style="display:none">
+        <div class="infinite-preloader"></div>
+       		正在加载...
+        </div>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		
+		<script type="text/javascript" src="../src/js/libs/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="../src/tjs/sea-modules/router.js"></script>
+        <script src="../src/tjs/sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+        <script src="../src/tjs/sea-modules/seajs/seajs-text.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="../src/js/base/siteConfigUrl.js" ></script>
+		<script type="text/javascript" src="../src/js/base/rem.js"></script>
+		<script type="text/javascript" src="../src/js/libs/template.js"></script>
+
+		
+		<title>我的</title>
+		<script type="text/javascript">
+            seajs.config({
+                base: "../src/js/common",
+                alias: {
+                    "jquery": "jquery/jquery/1.10.1/jquery.js",
+                    "bootstrap": "bootstrap/js/bootstrap.min.js",
+                    //"photoswipe": "photoswipe/photoswipe.js",
+                    //"photoswipe-ui-default": "photoswipe/photoswipe-ui-default.js",
+                    "handlebars": window.location.origin + "/js/core/handlebars.js"
+                },
+                paths: {
+                    "js": window.location.origin + "/js",
+                    "view": window.location.origin + "/view",
+                    "images": window.location.origin + "/images",
+                }
+            });
+			seajs.use("../src/js/common/store");
+		</script>
+	</head>
+	<body>
+		<div class="store-head">
+			<div class="store-head-des middle-center">
+				<span class="head"></span>
+				<span class="name">多肉的小店</span>
+			</div>
+			<div class="store-head-bar">
+				<a>
+					<p><i class="iconfont icon-qiaxinxi color-white fontSize-1-2"></i></p>
+					<p>微店信息</p>
+				</a>
+				<a>
+					<p><i class="iconfont icon-erweima color-white fontSize-1-2"></i></p>
+					<p>微店二维码</p>
+				</a>
+				<a class="test">
+					<p><i class="iconfont icon-fenxiang color-white fontSize-1-2"></i></p>
+					<p>我的店铺</p>
+				</a>
+			</div>
+			<div class="store-head-opcity"></div>
+		</div>
+		<p class="title-tip color-3">BD经理</p>
+		<div class="content-bd">
+			<div class="content-btn">
+				<a href="../personal-store/erweima.html">
+					<p class="icon store-bg1"><i class="iconfont icon-erweima color-white fontSize-1-2"></i></p>
+					<p class="title">我的二维码</p>
+				</a>
+				<a href="../personal-store/yeji.html">
+					<p class="icon store-bg2"><i class="iconfont icon-jixiao color-white fontSize-1-2"></i></p>
+					<p class="title">当月业绩</p>
+				</a>
+				<a href="../personal-store/mine_store.html">
+					<p class="icon store-bg3"><i class="iconfont icon-dianpushop color-white fontSize-1-2"></i></p>
+					<p class="title">我的店铺</p>
+				</a>
+				<p class="clear"></p>
+			</div>
+		</div>
+		<p class="title-tip color-3 clearfix">店铺管理</p>
+			<div class="content-btn">
+				<a>
+					<p class="icon store-bg4"><i class="iconfont icon-pintuan color-white fontSize-1-2"></i></p>
+					<p class="title">拼团</p>
+					<p class="tip">敬请期待</p>
+				</a>
+				<a>
+					<p class="icon store-bg5"><i class="iconfont icon-gouwuche color-white fontSize-1-2"></i></p>
+					<p class="title">促销活动</p>
+					<p class="tip">敬请期待</p>
+				</a>
+				<a href="/storeCats">
+					<p class="icon store-bg6"><i class="iconfont icon-shangpindingdanguanli color-white fontSize-1-2"></i></p>
+					<p class="title">所有商品</p>
+				</a>
+				<p></p>
+				<a href="/Batch_setting">
+					<p class="icon store-bg7"><i class="iconfont icon-lirunbiao color-white fontSize-1-2"></i></p>
+					<p class="title">批量设置利润</p>
+				</a>
+				<a href="/javascript:">
+					<p class="icon store-bg8"><i class="iconfont icon-fukuanguanli color-white fontSize-1-2"></i></p>
+					<p class="title">收款设置</p>
+					<p class="tip">敬请期待</p>
+				</a>
+				<a href="/profit">
+					<p class="icon store-bg9"><i class="iconfont icon-money color-white fontSize-1-2"></i></p>
+					<p class="title">收益</p>
+				</a>
+				<p></p>
+				<a href="/kefu">
+					<p class="icon store-bg10"><i class="iconfont icon-kefu color-white fontSize-1-2"></i></p>
+					<p class="title">客服设置</p>
+				</a>
+				<a href="/helping">
+					<p class="icon store-bg11"><i class="iconfont icon-love color-white fontSize-1-2"></i></p>
+					<p class="title">使用帮助</p>
+				</a>
+				<a href="/news">
+					<p class="icon store-bg12"><i class="iconfont icon-xiaoxi color-white fontSize-1-2"></i></p>
+					<p class="title">消息</p>
+				</a>
+		
+				<p class="clear"></p>
+			</div>
+			<p class="login-out-btn clearfix">
+				退出登录
+			</p>
+			<ul class="d_foot">
+				<li class="d_ac">
+					<p><i class="iconfont icon-dianpushop color"></i></p>
+					<p>我的</p>
+				</li>
+					<a href="../activity/index.html">
+				<li>
+				
+					<p><i class="iconfont icon-laba"></i></p>
+					<p>活动</p>
+			
+				</li>
+					</a>
+				<a href="../order/order_list.html">
+                    <li>
+                        <p><i class="iconfont icon-dingdan"></i></p>
+                        <p>所有订单</p>
+                    </li>
+			    </a>
+			    <a href="../cats/cats.html">
+                    <li>
+                        <p><i class="iconfont icon-huaban "></i></p>
+                        <p>所有商品</p>
+                    </li>
+			    </a>
+			</ul>
+			
+	</body>
+</html>

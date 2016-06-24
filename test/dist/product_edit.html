@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../css/weui.min.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/jquery-weui.css" />
+		<script type="text/javascript" src="../../js/libs/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../js/base/siteConfigUrl.js" ></script>
+		<script type="text/javascript" src="../../js/widget/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../js/widget/validator.js" ></script>
+		<script type="text/javascript" src="../../js/widget/render.js" ></script>
+		<script type="text/javascript" src="../../js/base/rem.js"></script>
+		<script type="text/javascript" src="../../js/libs/template.js"></script>
+		<script type="text/javascript" src="../../js/common/store/product_edit.js"></script>
+		<title>商品编辑</title>
+	</head>
+	<body>
+		<div class="product-head">
+			<div class="items-content">
+	            <a href="item.html?item_id={{data.item_id}}">
+	                <div class="img fl">
+	                    <img class="" src="http://imgcdn.baobeimt.cn/2016_04_29/5723081922f89.png@!pic_200_200" alt="">
+	                </div>
+	                <div class="text-content fl">
+	                    <h4 class="title">{{data.title}}美国Aveeno艾维诺婴儿燕麦洗发沐浴二合一236ml</h4>
+	                    <p class="price">单价:<span>&yen;123.00{{data.price}}</span></p>
+	                </div>
+	            </a>
+	        </div>
+		</div>
+
+		<div class="product-edit">
+			<ul>
+				<li>
+					<span>规格</span>
+					<span>成本价(&yen)</span>
+					<span>微店售价(&yen)</span>
+				</li>	
+				<li>
+					<span>2袋装</span>
+					<span>124</span>
+					<span><input type="text" value="160" /><b></b></span>
+				</li>
+				<li>
+					<span>4袋装</span>
+					<span>124</span>
+					<span><input type="text" value="160" /><b></b></span>
+				</li>
+				<li>
+					<span>6袋装</span>
+					<span>124</span>
+					<span><input type="text" value="160" /><b></b></span>
+				</li>
+			</ul>
+		</div>
+		<p class="product-btn">
+			<span>恢复原售价</span>
+		</p>
+		<a class="store-submit-btn">保存</a>
+	</body>
+</html>
+
+

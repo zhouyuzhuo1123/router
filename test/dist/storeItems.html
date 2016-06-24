@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../css/style.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../css/reset.css" />
+		<link rel="stylesheet" href="../../css/weui.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/jquery-weui.css" />
+		<script type="text/javascript" src="../../js/libs/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/jquery.lazyload.js"></script>
+		<script type="text/javascript" src="../../js/widget/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../js/libs/template.js"></script>
+		<script type="text/javascript" src="../../js/base/siteConfigUrl.js"></script>
+		<script type="text/javascript" src="../../js/widget/render.js"></script>
+		<script type="text/javascript" src="../../js/widget/ajax.js"></script>
+		<script type="text/javascript" src="../../js/common/items.js"></script>
+		<script type="text/javascript" src="../../js/base/rem.js"></script>
+		<title>商品列表</title>
+	</head>
+
+	<body>
+		<div class="search_bar search_bar_items">
+			<form action="" method="get">
+				<div class="search_bar_form">
+					<i class="iconfont icon-sousuo"></i>
+					<input type="search" value="" id="search-box" name="keyword" placeholder="商品名称搜索" class="search" >
+				</div>
+			</form>
+		</div>
+		<div class="his_tpl">
+			<div class="search_bar search_bar_items">
+				<form id="search_form" action="" method="get">
+					<div class="search_bar_form">
+						<input type="search" value="" name="keyword" placeholder="商品名称搜索" class="search" >
+						<span class="search-cancel-btn">取消</span>
+					</div>
+				</form>
+			</div>
+			<p class="title">搜索历史</p>
+			<div class="tip">
+	        </div>
+	        <p class="clear-btn">清空记录</p>
+        </div>
+		<div class="d_container2">
+			
+        </div>
+        
+        <div class="weui-infinite-scroll" style="display:none">
+        <div class="infinite-preloader"></div>
+       		正在加载...
+        </div>
+        <span id="moverTop" style="display:none"></span>
+	</body>
+
+</html>
